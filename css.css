@@ -13,6 +13,7 @@ a#myAdLink {
   height: 200px;
   position: relative;
   overflow: hidden;
+  opacity: 0;
 }
 #myAd .myAd_Img {
   position: absolute;
@@ -23,6 +24,7 @@ a#myAdLink {
   height: inherit;
   top: 0;
   left: 0;
+  background-repeat: repeat-x;
 }
 #myAd #myAd_photo {
   width: inherit;
@@ -31,8 +33,8 @@ a#myAdLink {
   bottom: 0;
   left: 0;
 }
-.myAd_txt1,
-.myAd_txt2 {
+#myAd_txt1,
+#myAd_txt2 {
   position: absolute;
   width: inherit;
   text-align: center;
@@ -71,4 +73,9 @@ a#myAdLink {
   background-position: -2px -233px;
   top: 110px;
   left: 390px;
+}
+
+#myAd #myAd_txt1 span {
+  display: inline-block;
+  position: relative;
 }
